@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+
+body {
+  background-color: rgb(0,0,33);
+  color: white;
+  font-family: Poppins, 'sans-serif';
+}
+
+nav {
+  display: flex;
+  justify-content: space-between; /* Space between left and right nav */
+  align-items: center;
+  height: 80px;
+  padding: 0 20px; /* Adjust padding */
+  background-color: rgb(18,18,62);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 15px; /* Reduce margin for smaller screens */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+nav ul li a:hover,
+nav ul li a:active,
+nav ul li a:focus {
+  color: blueviolet;
+  font-size: 1.2rem;
+}
+
+.left {
+  font-size: 1.5rem;
+}
+
+.firstSection {
+  display: flex;
+  flex-direction: column-reverse; /* Column for mobile, row for larger screens */
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+}
+
+.firstSection > div {
+  width: 90%; /* Adjust width to fit smaller screens */
+}
+
+.leftSection {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.rightSection img {
+  width: 100%; /* Let the image be responsive */
+  max-width: 400px; /* Optional: Limit the max image width */
+}
+
+.purple {
+  color: blueviolet;
+}
+
+.gray {
+  color: gray;
+  margin-left: 20px; /* Adjust margin for smaller screens */
+}
+
+#element {
+  color: blueviolet;
+}
+
+.secondSection h1 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.secondSection {
+  height: auto;
+  padding: 50px 20px; /* Adjust padding */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.secondSection .box {
+  background: white;
+  width: 80%;
+  height: 2px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.secondSection .verticle {
+  height: 93px;
+  width: 1px;
+  background-color: white;
+}
+
+main hr {
+  border: 0;
+  background: #2600ff;
+  height: 1.2px;
+  margin-top: 110px;
+  margin-bottom: 40px;
+}
+
+/* Media Queries for responsiveness */
+@media (min-width: 768px) {
+  nav ul li {
+      margin: 0 23px; /* Larger margin for larger screens */
+  }
+
+  .firstSection {
+      flex-direction: row; /* Row layout for larger screens */
+      justify-content: space-around;
+      margin: 80px 0;
+  }
+
+  .firstSection > div {
+      width: 40%; /* Adjust width for larger screens */
+  }
+
+  .rightSection img {
+      width: 80%; /* Adjust image width for larger screens */
+  }
+}
+
+@media (max-width: 767px) {
+  .left {
+      font-size: 1.2rem; /* Smaller font size for smaller screens */
+  }
+
+  .firstSection {
+      margin: 20px 0; /* Less margin for small screens */
+  }
+
+  .leftSection {
+      font-size: 1.5rem; /* Smaller font for mobile */
+  }
+}
+.card-img-top{
+  height: 10.5rem;
+  width: 10.5rem;
+}
+
+h1{
+  margin-top: 100px;
+}
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  background-color: rgb(0,0,33);
+ 
+}
+.about2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.aboutMe {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 1.4rem; 
+}
+
+#me{
+  margin-top: 400px;
+}
+.you{
+  margin-bottom: 550px;
+}
+.skill{
+  font-size: 2rem;
+  margin-bottom: 80px;
+}
+form{
+  margin-top: 450px;
+}
+.left{
+  color: #ff7e15;
+}
+.right ul li a{
+  color: #ff7e15;
+  font-size: 1.2rem;
+}
+h1{
+  font-size: 3rem;
+  color: blueviolet;
+}
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background: #333;
+  color: white;
+}
+.rightSection img{
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+}
+footer {
+  background-color: #2C3E50;
+  color: #ECF0F1;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-left p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.footer-middle ul,
+.footer-right ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.footer-middle li,
+.footer-right li {
+  margin-right: 20px;
+}
+
+.footer-middle a,
+.footer-right a {
+  color: #ECF0F1;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-middle a:hover,
+.footer-right a:hover {
+  color: #3498DB;
+}
